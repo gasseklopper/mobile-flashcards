@@ -1,14 +1,25 @@
-
-import React from 'react'
+import React from 'react';
 import { View } from 'react-native'
-import AddEntry from './components/AddEntry'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import reducer from './reducers'
+import ReduxThunk from 'redux-thunk'
+import MainNavigation from './components/MainNavigation'
+
+const store = createStore(reducer, {}, applyMiddleware(ReduxThunk))
 
 export default class App extends React.Component {
+	componentDidMount() {
+//basic setup
+	}
+
 	render() {
 		return (
-			<View>
-				<AddEntry />
-			</View>
+			<Provider store={store}>
+				<View style={{flex: 1}}>
+					<MainNavigation/>
+				</View>
+			</Provider>
 		)
 	}
 }
