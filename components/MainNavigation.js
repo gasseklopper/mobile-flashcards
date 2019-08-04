@@ -22,19 +22,7 @@ const router = {
 		navigationOptions: {
 			tabBarLabel: 'AddDeck',
 		},
-	},
-	IndividualDeck: {
-		screen: IndividualDeck,
-		navigationOptions: {
-			tabBarLabel: 'IndividualDeck',
-		},
-	},
-	Quiz: {
-		screen: Quiz,
-		navigationOptions: {
-			tabBarLabel: 'Quiz',
-		},
-	},
+	}
 }
 
 const navigationOptions = {
