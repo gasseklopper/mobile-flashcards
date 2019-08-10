@@ -22,8 +22,8 @@ export const decks = {
 		}
 		]
 	},
-	html: {
-		title: 'Redux',
+	Html: {
+		title: 'Html',
 		questions: [
 		{
 			question: 'What is Html',
