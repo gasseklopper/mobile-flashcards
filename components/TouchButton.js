@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 		alignItems: `center`,
 		borderWidth: 1,
 		borderColor: darkGray,
-		color: white
+
 	},
 	btnDisabled: {
 		backgroundColor: gray,
@@ -56,9 +56,8 @@ const styles = StyleSheet.create({
 	btnText: {
 		fontSize: 20,
 		fontWeight: 'bold',
-		color: white
 	},
 	btnTextDisabled: {
-		color: darkGray
+		// color: darkGray
 	}
 })
