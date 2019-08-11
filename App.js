@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import reducer from './reducers/index'
 import Constants from 'expo-constants'
 import AppNavigator from './navigation/AppNavigator'
+import { setLocalNotification } from './utils/helpers'
 
 
 const store = createStore(
@@ -24,7 +25,7 @@ function FlashcardStatusBar({ backgroundColor, ...props }) {
 
 export default class App extends React.Component {
 	componentDidMount() {
-		//basic setup
+		setLocalNotification()
 	}
 	render() {
 		return (

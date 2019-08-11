@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Constants from 'expo-constants'
 import Quiz_Android from './Quiz_Android'
 import Quiz_iOS from './Quiz_iOS'
-// import { setLocalNotification, clearLocalNotification } from '../utils/helpers'
+import { setLocalNotification, clearLocalNotification } from '../utils/helpers'
 
 export class Quiz extends Component {
 	static navigationOptions = ({ navigation }) => {
@@ -13,7 +13,7 @@ export class Quiz extends Component {
 	}
 
 	componentDidMount() {
-		// clearLocalNotification().then(setLocalNotification)
+		clearLocalNotification().then(setLocalNotification)
 	}
 
 	render() {
