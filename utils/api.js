@@ -1,6 +1,6 @@
 import { AsyncStorage } from 'react-native'
 import { decks } from './_DATA'
-//following the guide from https://james-priest.github.io/mobile-flashcards/
+
 const DECKS_STORAGE_KEY = 'Flashcards:decks'
 
 export function getData() {
@@ -14,8 +14,6 @@ function formatDeckResults(results) {
 export function getDecksOld() {
 	return AsyncStorage.getItem(DECKS_STORAGE_KEY).then(formatDeckResults)
 	return AsyncStorage.getItem(DECKS_STORAGE_KEY).then(result => {
-		// console.log('raw result', result)
-		// console.log('parse result', JSON.parse(result))
 		return formatDeckResults(result)
 	})
 }

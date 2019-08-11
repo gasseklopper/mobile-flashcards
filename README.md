@@ -1,7 +1,8 @@
 # Flashcards
 
-Project for Udacity's React-Native & Redux course. ad a flashcard game where u can add decks and cards with a question and an answer
+Project for Udacity's React-Native & Redux course. ad a flashcard game where u can add decks and cards with a question and an answer.
 
+//following the guide from https://james-priest.github.io/mobile-flashcards/
 
 ### how to get this project
 1. clone or download this project to your workspace
