@@ -4,6 +4,7 @@ import * as Icon from '@expo/vector-icons'
 import { createBottomTabNavigator, createStackNavigator} from 'react-navigation'
 import DeckList from '../components/DeckList'
 import AddDeck from '../components/AddDeck'
+import APITest from '../components/APITest'
 import DeckDetail from '../components/DeckDetail'
 import AddCard from '../components/AddCard'
 import Quiz from '../components/Quiz'
@@ -32,6 +33,15 @@ const routeConfigs = {
 			tabBarLabel: 'Add Deck',
 			tabBarIcon: ({ tintColor }) => (
 				<Icon.FontAwesome name="plus-square" size={30} color={tintColor} />
+			)
+		}
+	},
+	ApiTest: {
+		screen: APITest,
+		navigationOptions: {
+			tabBarLabel: 'APITest',
+			tabBarIcon: ({ tintColor }) => (
+				<Icon.FontAwesome name="check" size={30} color={tintColor} />
 			)
 		}
 	}

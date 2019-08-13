@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import {	getDecks,	getDeck,	addDeck,	addCardToDeck,	resetDecks} from '../utils/api.js'
+import {getDecks, getDeck, saveDeckTitleAS,	addCardToDeckAS, resetDecks} from '../utils/api.js'
 
 export default class APITest extends React.Component {
 	state = {
@@ -30,11 +30,11 @@ export default class APITest extends React.Component {
 	}
 
 	handleSaveDeck = () => {
-		addDeck('Test');
+		saveDeckTitleAS('Test');
 	}
 
 	handleAddCard = () => {
-		addCardToDeck('Html', {
+		addCardToDeckAS('Html', {
 			question: 'question1',
 			answer: 'answer1'
 		})
